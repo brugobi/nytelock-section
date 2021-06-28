@@ -1,10 +1,11 @@
 import React from 'react';
+import LogoList from './components/logoList';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <h1>NYTELOCK - DIGITAL</h1>
+      <LogoList />
     </div>
   );
 }
