@@ -1,12 +1,21 @@
-import React from 'react';
-import LogoList from './components/logoList';
+import React, { useState } from 'react';
 import './App.css';
+import items from './data/data';
+import LogoItem from './components/LogoItem';
 
 function App() {
+  const [menuItems, setMenuItems] = useState(items);
+  const [categories, setCategories] = useState([]);
+
   return (
-    <div className="App">
-      <LogoList />
-    </div>
+    <main>
+      <section>
+        <div>
+          <h2>our Logos</h2>
+        </div>
+        <LogoItem items={menuItems} />
+      </section>
+    </main>
   );
 }
 
