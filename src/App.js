@@ -9,13 +9,18 @@ function App() {
   const [menuItems, setMenuItems] = useState(items);
   const [categories, setCategories] = useState([]);
 
+  const selectItem = (type) => {
+    const newItems = items.filter((item) => item.type === type);
+    setMenuItems(newItems);
+  };
+
   return (
     <main>
       <section>
         <div>
           <h2>our Logos</h2>
         </div>
-        <Types />
+        <Types selectItem={selectItem} />
         <LogoItem items={menuItems} />
       </section>
     </main>
