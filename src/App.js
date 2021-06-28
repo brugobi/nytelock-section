@@ -1,6 +1,8 @@
+/* eslint-disable no-unused-vars */
 import React, { useState } from 'react';
 import './App.css';
 import items from './data/data';
+import Types from './components/Types';
 import LogoItem from './components/LogoItem';
 
 function App() {
@@ -13,6 +15,7 @@ function App() {
         <div>
           <h2>our Logos</h2>
         </div>
+        <Types />
         <LogoItem items={menuItems} />
       </section>
     </main>
