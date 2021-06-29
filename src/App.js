@@ -18,9 +18,6 @@ function App() {
   return (
     <main>
       <section>
-        <div>
-          <h2>our Logos</h2>
-        </div>
         <Types types={types} selectItem={selectItem} />
         <LogoItem items={menuItems} />
       </section>
