@@ -13,7 +13,7 @@ const logoItem = ({ items }) => (
               <div className="column">
                 <header>
                   <h1 className="title-customized">{title}</h1>
-                  <p>{ content }</p>
+                  {content.split('\n').map((p) => <p className="p-space" key={p}>{p}</p>)}
                 </header>
               </div>
               <div className="column">
