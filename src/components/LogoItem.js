@@ -13,7 +13,7 @@ const logoItem = ({ items }) => (
               <div className="column">
                 <header>
                   <h1 className="title-customized">{title}</h1>
-                  <p>{content}</p>
+                  <p>{ content }</p>
                 </header>
               </div>
               <div className="column">

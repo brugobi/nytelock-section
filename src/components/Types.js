@@ -1,7 +1,10 @@
 /* eslint-disable */
 import React from 'react';
+import items from '../data/data';
+import IconComponent from './IconComponent';
 
 const Types = ({ types, selectItem }) => {
+  
   return (
     <div className="section has-background-dark">
       <div className="container">
@@ -16,7 +19,13 @@ const Types = ({ types, selectItem }) => {
                   type="button"
                   className="btn-Type"
                   key={index}
-                  onClick={() => selectItem(type)}> {type}
+                  onClick={() => selectItem(type)}>
+                  <div>
+                    <IconComponent icon={items.find((item) => item.type === type).icon} />
+                  </div>
+                  <div>
+                    {type}
+                  </div>
                   <p>Logos</p>
                 </button>
               </div>
