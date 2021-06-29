@@ -10,7 +10,7 @@ const items = [
     id: 1,
     title: 'Lettermark Logos',
     type: 'lettermark',
-    content: "A Monogram or lettermark is a typography-based logo that's comprised of a few letters, ussually a company's initials.The lettermark is all about simplicity. But utilizing just a few letters lettermark logos are effective at streamlining any company brand if they have a long name.",
+    content: "A Monogram or lettermark is a typography-based logo that's comprised of a few letters, usually a company's initials.The lettermark is all about simplicity. But utilizing just a few letters lettermark logos are effective at streamlining any company brand if they have a long name.",
     img: lettermark,
   },
   {
