@@ -18,8 +18,12 @@ function App() {
   return (
     <main>
       <section>
-        <Types types={types} selectItem={selectItem} />
-        <LogoItem items={menuItems} />
+        <div>
+          <Types types={types} selectItem={selectItem} />
+        </div>
+        <div>
+          <LogoItem items={menuItems} />
+        </div>
       </section>
     </main>
   );

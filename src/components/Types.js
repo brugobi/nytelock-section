@@ -6,7 +6,7 @@ import IconComponent from './IconComponent';
 const Types = ({ types, selectItem }) => {
   
   return (
-    <div className="section has-background-dark">
+    <div className="section color-gray">
       <div className="container">
         <div className="columns">
           <p>Different Types of Logo Style</p>
@@ -14,20 +14,22 @@ const Types = ({ types, selectItem }) => {
         <div className="columns">
           {types.map((type, index) => {
             return (
-              <div className="column">
-                <button
+              <div className="column btn-container">
+                <div className="btn-div">
+                  <button
+                  className="btn-logo"
                   type="button"
-                  className="btn-Type"
                   key={index}
                   onClick={() => selectItem(type)}>
-                  <div>
-                    <IconComponent icon={items.find((item) => item.type === type).icon} />
-                  </div>
-                  <div>
-                    {type}
-                  </div>
-                  <p>Logos</p>
-                </button>
+                    <div className="icon">
+                      <IconComponent icon={items.find((item) => item.type === type).icon} />
+                    </div>
+                      <div className="btn-link">
+                        <p className="p-caps">{type}</p>
+                        <p className="p-caps">Logos</p>
+                    </div>
+                  </button>
+                </div>
               </div>
             )
           })}

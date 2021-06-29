@@ -17,7 +17,7 @@ const logoItem = ({ items }) => (
                 </header>
               </div>
               <div className="column">
-                <div className="notification is-white is-centered">
+                <div className="notification is-white center">
                   <figure className="image">
                     <img src={img} alt={title} style={{ maxWidth: '400px' }} />
                   </figure>
