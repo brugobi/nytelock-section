@@ -8,12 +8,22 @@ const logoItem = ({ items }) => (
       } = menuItem;
       return (
         <article key={id}>
-          <div className="item-info">
-            <header>
-              <h4>{title}</h4>
-              <p>{content}</p>
-            </header>
-            <img src={img} alt={title} />
+          <div className="container">
+            <div className="columns">
+              <div className="column">
+                <header>
+                  <h1 className="title-customized">{title}</h1>
+                  <p>{content}</p>
+                </header>
+              </div>
+              <div className="column">
+                <div className="notification is-white is-centered">
+                  <figure className="image">
+                    <img src={img} alt={title} style={{ maxWidth: '400px' }} />
+                  </figure>
+                </div>
+              </div>
+            </div>
           </div>
         </article>
       );

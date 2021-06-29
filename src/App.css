@@ -1,7 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap');
+
 .App {
   text-align: center;
 }
 
 .btn-Type {
   padding: 5px;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title-customized {
+  font-family: 'Inter', sans-serif;
+  font-size: 40px;
+  font-weight: bold;
+  color: black;
 }
