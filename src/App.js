@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import './App.css';
 import items from './data/data';
-import Types from './components/Types';
-import LogoItem from './components/LogoItem';
+import TypesContainer from './container/TypesContainer';
+import LogoItemComponent from './components/LogoItemComponent';
 
 const allTypes = [...new Set(items.map((item) => item.type))];
 
@@ -19,10 +19,10 @@ function App() {
     <main>
       <section>
         <div>
-          <Types types={types} selectItem={selectItem} />
+          <TypesContainer types={types} selectItem={selectItem} />
         </div>
         <div>
-          <LogoItem items={menuItems} />
+          <LogoItemComponent items={menuItems} />
         </div>
       </section>
     </main>

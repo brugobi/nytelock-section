@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { AiOutlineArrowRight } from 'react-icons/ai';
 import items from '../data/data';
-import IconComponent from './IconComponent';
+import IconContainer from './IconContainer';
 
 const Types = ({ types, selectItem }) => (
   <div className="section color-gray">
@@ -35,7 +35,7 @@ const Types = ({ types, selectItem }) => (
                 onClick={() => selectItem(type)}
               >
                 <div className="icon">
-                  <IconComponent icon={items.find((item) => item.type === type).icon} />
+                  <IconContainer icon={items.find((item) => item.type === type).icon} />
                 </div>
                 <div className="btn-link">
                   <p className="p-caps">{type}</p>
