@@ -1,6 +1,6 @@
 # NYTELOCK-SECTION
  
-> React Project where I recreated a section of the [NYTELOCK site](https://nytelock.com/logo-design-service-in-singapore/). I develop this section using Class Components, Prop-Types and deployment to gh-pages.
+> React Project where I recreated a section of the [NYTELOCK site](https://nytelock.com/logo-design-service-in-singapore/). I develop this section using Class Components, Prop-Types, and deployment to gh-pages.
 
 ![section_page](./src/images/section_page.png)
 
