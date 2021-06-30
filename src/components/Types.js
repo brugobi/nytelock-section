@@ -2,15 +2,27 @@
 import React from 'react';
 import items from '../data/data';
 import IconComponent from './IconComponent';
+import { AiOutlineArrowRight } from "react-icons/ai";
 
 const Types = ({ types, selectItem }) => {
   
   return (
     <div className="section color-gray">
       <div className="container">
-        <div className="columns">
-          <p>Different Types of Logo Style</p>
+        <div className="columns header-type-container">
+          <div className="header-type">
+            <h1>how do I know which logo style is right for me?</h1>
+            <div className="btn-contact-container">
+              <div>
+                <p className="p-caps">Different Types of Logo Style</p>
+              </div>
+              <div className="btn-contact">
+                <button className="p-caps">contact us <span className="contact-icon"><AiOutlineArrowRight /></span></button>
+              </div>
+            </div>
+          </div>
         </div>
+      
         <div className="columns">
           {types.map((type, index) => {
             return (

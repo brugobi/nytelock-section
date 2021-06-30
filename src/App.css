@@ -4,6 +4,52 @@
   text-align: center;
 }
 
+.header-type {
+  padding-left: 25px;
+  padding-top: 25px;
+}
+
+.btn-contact-container {
+  display: flex;
+  justify-content: space-between;
+  min-width: 900px;
+}
+
+.contact-icon {
+  border-radius: 100%;
+  background-color: white;
+  border: 0.1px solid white;
+  width: 25px !important;
+}
+
+.btn-contact-container button {
+  background-color: rgb(253, 201, 9);
+  height: 40px;
+  border-radius: 25px;
+}
+
+.header-type h1 {
+  display: list-item;
+  list-style-type: disc;
+  list-style-position: inside;
+  color: rgb(253, 201, 9);
+  font-family: 'Inter', sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.header-type p {
+  font-family: 'Inter', sans-serif;
+  font-size: 40px;
+  font-weight: bold;
+  color: white;
+}
+
+.header-type-container {
+  background-color: rgb(56, 57, 57);
+}
+
 .btn-Type {
   padding: 5px;
 }
@@ -28,7 +74,7 @@
   border-radius: 8px;
   min-width: 100%;
   height: 137px;
-  background-color: rgb(42, 42, 42);
+  background-color: rgb(56, 57, 57);
 }
 
 .btn-logo:hover {
@@ -42,7 +88,7 @@
 
 .btn-container {
   min-height: 180px;
-  background-color: rgb(42, 42, 42);
+  background-color: rgb(56, 57, 57);
 }
 
 .btn-div {
